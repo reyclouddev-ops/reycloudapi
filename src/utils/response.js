@@ -8,19 +8,25 @@ class Response {
 
             message,
 
-            data
+            data,
+
+            timestamp: new Date().toISOString()
 
         });
 
     }
 
-    static error(res, message = "Error", status = 400) {
+    static error(res, message = "Error", status = 400, errors = null) {
 
         return res.status(status).json({
 
             success: false,
 
-            message
+            message,
+
+            errors,
+
+            timestamp: new Date().toISOString()
 
         });
 
