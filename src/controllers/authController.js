@@ -12,15 +12,7 @@ class AuthController {
 
         try {
 
-            const {
-
-                username,
-
-                email,
-
-                password
-
-            } = req.body;
+            const { username, email, password } = req.body;
 
             if (!username || !email || !password) {
 
@@ -28,11 +20,7 @@ class AuthController {
 
             }
 
-            const checkUsername = await User.findOne({
-
-                username
-
-            });
+            const checkUsername = await User.findOne({ username });
 
             if (checkUsername) {
 
@@ -40,11 +28,7 @@ class AuthController {
 
             }
 
-            const checkEmail = await User.findOne({
-
-                email
-
-            });
+            const checkEmail = await User.findOne({ email });
 
             if (checkEmail) {
 
@@ -83,6 +67,94 @@ class AuthController {
                 },
 
                 201
+
+            );
+
+        } catch (err) {
+
+            return Response.error(res, err.message, 500);
+
+        }
+
+    }
+
+    static async login(req, res) {
+
+        try {
+
+            const { username, password } = req.body;
+
+            if (!username || !password) {
+
+                return Response.error(res, "Username/email dan password wajib diisi");
+
+            }
+
+            const user = await User.findOne({
+
+                $or: [
+
+                    { username },
+
+                    { email: username }
+
+                ]
+
+            });
+
+            if (!user) {
+
+                return Response.error(res, "User tidak ditemukan", 404);
+
+            }
+
+            const checkPassword = await bcrypt.compare(
+
+                password,
+
+                user.password
+
+            );
+
+            if (!checkPassword) {
+
+                return Response.error(res, "Password salah");
+
+            }
+
+            const token = JWT.create({
+
+                id: user._id,
+
+                username: user.username,
+
+                role: user.role
+
+            });
+
+            return Response.success(
+
+                res,
+
+                "Login berhasil",
+
+                {
+
+                    token,
+
+                    user: {
+
+                        id: user._id,
+
+                        username: user.username,
+
+                        email: user.email,
+
+                        role: user.role
+
+                    }
+
+                }
 
             );
 
