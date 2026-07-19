@@ -1,21 +1,61 @@
-MIT License
+==========================================================
+                 REYCLOUDAPI LICENSE v1.0
+==========================================================
 
-Copyright (c) 2026 reyclouddev-ops
+Copyright (c) 2026 ReyCloud.
+All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+ReyCloudAPI is proprietary software developed and owned by ReyCloud.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is granted to:
+- Use the software for personal or internal business purposes.
+- Study the source code for educational purposes.
+- Build applications that interact with ReyCloudAPI.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+You are NOT permitted to:
+- Sell, resell, or redistribute the source code.
+- Claim the project as your own.
+- Remove or modify the copyright notice.
+- Publish modified versions without written permission from ReyCloud.
+- Re-upload this source code to another platform without permission.
+
+Ownership
+
+All copyrights, source code, documentation, logos, and project identity remain the exclusive property of ReyCloud.
+
+Disclaimer
+
+This software is provided "AS IS", without warranty of any kind. ReyCloud shall not be liable for any damages arising from the use of this software.
+
+==========================================================
+                LISENSI REYCLOUDAPI v1.0
+==========================================================
+
+Hak Cipta (c) 2026 ReyCloud.
+Seluruh Hak Dilindungi.
+
+ReyCloudAPI adalah perangkat lunak berpemilik yang dibuat dan dimiliki oleh ReyCloud.
+
+Diizinkan untuk:
+- Menggunakan perangkat lunak untuk kebutuhan pribadi atau internal bisnis.
+- Mempelajari source code untuk tujuan pembelajaran.
+- Membuat aplikasi yang terhubung dengan ReyCloudAPI.
+
+Tidak diizinkan untuk:
+- Menjual, menjual ulang, atau mendistribusikan source code.
+- Mengklaim project sebagai milik sendiri.
+- Menghapus atau mengubah pemberitahuan hak cipta.
+- Mempublikasikan versi modifikasi tanpa izin tertulis dari ReyCloud.
+- Mengunggah ulang source code ke platform lain tanpa izin.
+
+Kepemilikan
+
+Seluruh hak cipta, source code, dokumentasi, logo, dan identitas proyek tetap menjadi milik eksklusif ReyCloud.
+
+Penafian
+
+Perangkat lunak ini disediakan "SEBAGAIMANA ADANYA" tanpa jaminan apa pun. ReyCloud tidak bertanggung jawab atas kerusakan atau kerugian yang timbul akibat penggunaan perangkat lunak ini.
+
+==========================================================
+© 2026 ReyCloud. All Rights Reserved.
+==========================================================
