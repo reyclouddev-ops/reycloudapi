@@ -4,6 +4,8 @@ const User = require("../models/User");
 
 const Response = require("../utils/response");
 
+const JWT = require("../utils/jwt");
+
 class AuthController {
 
     static async register(req, res) {
