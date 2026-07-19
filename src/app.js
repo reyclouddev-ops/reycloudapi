@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 
+const Response = require("./utils/response");
+
 const app = express();
 
 app.use(cors());
@@ -12,15 +14,11 @@ app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
 
-    res.json({
-
-        success: true,
+    Response.success(res, "ReyCloudAPI Online", {
 
         name: "ReyCloudAPI",
 
-        version: "1.0.0",
-
-        status: "ONLINE"
+        version: "1.0.0"
 
     });
 
@@ -28,13 +26,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/ping", (req, res) => {
 
-    res.json({
-
-        success: true,
-
-        message: "PONG!"
-
-    });
+    Response.success(res, "PONG!");
 
 });
 
