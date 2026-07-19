@@ -7,16 +7,14 @@ const Response = require("./utils/response");
 const app = express();
 
 app.use(cors());
-
 app.use(express.json());
-
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
 
     Response.success(res, "ReyCloudAPI Online", {
 
-        name: "ReyCloudAPI",
+        name: process.env.APP_NAME,
 
         version: "1.0.0"
 
