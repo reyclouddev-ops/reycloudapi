@@ -166,6 +166,44 @@ class AuthController {
 
     }
 
+    static async profile(req, res) {
+
+        try {
+
+            return Response.success(
+
+                res,
+
+                "Profil berhasil diambil",
+
+                {
+
+                    id: req.user._id,
+
+                    username: req.user.username,
+
+                    email: req.user.email,
+
+                    role: req.user.role,
+
+                    status: req.user.status,
+
+                    createdAt: req.user.createdAt,
+
+                    updatedAt: req.user.updatedAt
+
+                }
+
+            );
+
+        } catch (err) {
+
+            return Response.error(res, err.message, 500);
+
+        }
+
+    }
+
 }
 
 module.exports = AuthController;
