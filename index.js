@@ -1,3 +1,9 @@
+/**
+ * ReyCloudAPI v1.0
+ * Copyright (c) 2026 ReyCloud
+ * All Rights Reserved.
+ */
+
 require("dotenv").config();
 
 const app = require("./src/app");
