@@ -2,13 +2,34 @@
   "name": "reycloudapi",
   "version": "1.0.0",
   "description": "Official ReyCloud Backend API",
+  "keywords": [
+    "reycloud",
+    "api",
+    "backend",
+    "express",
+    "mongodb",
+    "jwt",
+    "flutter",
+    "pterodactyl"
+  ],
+  "homepage": "https://github.com/reyclouddev-ops/reycloudapi",
+  "bugs": {
+    "url": "https://github.com/reyclouddev-ops/reycloudapi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyclouddev-ops/reycloudapi.git"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js"
   },
   "author": "ReyCloud",
-  "license": "MIT",
+  "license": "ReyCloudAPI License v1.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
