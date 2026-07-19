@@ -1,21 +1,30 @@
 require("dotenv").config();
 
 const app = require("./src/app");
+const connectDatabase = require("./src/config/database");
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+async function startServer() {
 
-    console.clear();
+    await connectDatabase();
 
-    console.log("======================================");
+    app.listen(PORT, () => {
 
-    console.log("🚀 ReyCloudAPI v1.0.0");
+        console.clear();
 
-    console.log("🌐 PORT :", PORT);
+        console.log("================================");
 
-    console.log("📡 STATUS : ONLINE");
+        console.log("🚀 ReyCloudAPI v1.0.0");
 
-    console.log("======================================");
+        console.log("🌐 Port :", PORT);
 
-});
+        console.log("📡 Status : ONLINE");
+
+        console.log("================================");
+
+    });
+
+}
+
+startServer();
